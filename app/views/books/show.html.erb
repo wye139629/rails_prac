@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Avatar:</strong>
+  <%= image_tag @book.avatar_url if @book.avatar_url.present? %>
+</p>
+
+<p>
   <strong>Title:</strong>
   <%= @book.title %>
 </p>
@@ -13,6 +18,11 @@
 <p>
   <strong>Publish date:</strong>
   <%= @book.publish_date %>
+</p>
+
+<p>
+  <strong>ISBN:</strong>
+  <%= @book.ISBN %>
 </p>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
