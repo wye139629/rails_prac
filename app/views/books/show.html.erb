@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Avatar:</strong>
+  <%= image_tag @book.avatar_url if @book.avatar_url.present? %>
+</p>
+
+<p>
   <strong>Title:</strong>
   <%= @book.title %>
 </p>
